@@ -17,9 +17,10 @@ app.use(
   serveIndex('public/mypc/404.html', { icons: true })
 )
 app.get('/', (req,res) => {
-  res.send('Contributed by hgl555 - Eagle.Team');
-  res.status(500).send('Contributed by hgl555 - Eagle.Team');
+  
+  return res.send('Contributed by hgl555 - Eagle.Team')
 });
+
 
 
 app.listen(PORT, () => console.log(`🚀 is on port ${PORT}`))
